@@ -1,7 +1,6 @@
-package UDEMY1;
-
 // Inches to Centimeter and Centimeter to Inches
 // Value is 20 inches
+// no specifications, however I used functions
 
 public class Problem3 {
     public static void main(String[] args) {

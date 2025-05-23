@@ -1,3 +1,8 @@
+/**
+ * Calculate area of square, rectangle and triangle
+ * formula and values given
+ */
+
 public class Problem1 {
     public static void main(String[] args) {
         double side = 3;

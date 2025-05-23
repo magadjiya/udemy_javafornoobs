@@ -1,4 +1,8 @@
-package UDEMY1;
+/**
+ * Calculate the sum of even numbers between 1 - 100
+ * Print the average of that
+ * use both while and for loops
+ */
 
 public class Problem5 {
     public static void main(String[] args) {

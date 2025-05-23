@@ -1,7 +1,6 @@
-package UDEMY1;
-
 // Farenheit is 60
 // convert faren to cels, and cels to faren
+
 public class Problem2 {
     public static void main(String[] args) {
         double value = 60;

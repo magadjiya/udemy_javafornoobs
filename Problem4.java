@@ -1,4 +1,7 @@
-package UDEMY1;
+/**
+ * Map Scores To grades, and print out message
+ * depending on grade, use switch statement and if.else statements
+ */
 
 public class Problem4 {
     public static void main(String[] args) {

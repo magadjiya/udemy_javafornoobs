@@ -25,6 +25,19 @@ This repository contains practice problems that align with the concepts covered 
 4. Problem Set 5 [Problem5.java](Problem5.java)
 
 ---
+## 🚀 Usage
+
+Make sure JDK is installed, then run:
+
+```bash
+javac Problem1.java
+java Problem1
+```
+Or:
+```bash
+java Problem1.java
+```
+---
 
 ## 🔗 Additional Resources
 

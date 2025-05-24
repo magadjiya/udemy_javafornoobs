@@ -22,7 +22,8 @@ This repository contains practice problems that align with the concepts covered 
 2. Problem Set 2 [Problem2.java](Problem2.java)
 3. Problem Set 3 [Problem3.java](Problem3.java)
 4. Problem Set 4 [Problem4.java](Problem4.java)
-4. Problem Set 5 [Problem5.java](Problem5.java)
+5. Problem Set 5 [Problem5.java](Problem5.java)
+6. Problem Set 6 [Problem6.java](Problem6.java)
 
 ---
 ## 🚀 Usage

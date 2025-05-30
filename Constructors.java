@@ -10,6 +10,9 @@ class UserProfile {
         this.age = age;
     }
 
+    // Getters for the fields
+    // These methods allow read access to the private fields
+    // They do not allow modification, ensuring encapsulation
     public String getUsername() {
         return username;
     }
@@ -20,12 +23,15 @@ class UserProfile {
         return age;
     }
     
+    // Setter for username with validation
     public void setUsername(String username) {
         if (username == null || username.isEmpty()) {
             throw new IllegalArgumentException("Username cannot be null or empty");
         }
         this.username = username;
     }
+
+    // Setter for email with validation
     public void setEmail(String email) {
         if (email == null || !email.contains("@")) {
             throw new IllegalArgumentException("Invalid email address");
@@ -33,6 +39,8 @@ class UserProfile {
             this.email = email;
         }
     }
+
+    // Setter for age with validation
     public void setAge(int age) {
         if (age < 0) {
             throw new IllegalArgumentException("Age cannot be negative");
@@ -40,6 +48,7 @@ class UserProfile {
         this.age = age;
     }
 
+    // Override toString method for better representation and debugging
     @Override
     public String toString() {
         return "UserProfile{" +

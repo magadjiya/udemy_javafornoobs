@@ -24,6 +24,8 @@ This repository contains practice problems that align with the concepts covered 
 4. Problem Set 4 [Problem4.java](Problem4.java)
 5. Problem Set 5 [Problem5.java](Problem5.java)
 6. Problem Set 6 [Problem6.java](Problem6.java)
+7. Problem Set 7 [Problem7.java](Problem7.java)
+8. Constructors [Constructors.java](Constructors.java)
 
 ---
 ## 🚀 Usage

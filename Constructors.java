@@ -39,6 +39,15 @@ class UserProfile {
         }
         this.age = age;
     }
+
+    @Override
+    public String toString() {
+        return "UserProfile{" +
+                "username='" + username + '\'' +
+                ", email='" + email + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }
 
 public class Constructors {

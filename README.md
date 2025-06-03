@@ -14,9 +14,9 @@ This repository contains practice examples from the **Java For Noobs** course. I
 
 ## 🧪 Practice Problems
 
-This repository contains practice problems that align with the concepts covered in the course. Each problem is designed to reinforce your understanding and provide hands-on experience.
+This repository contains practice problems that align with the concepts covered in the course. Each problem is designed to reinforce understanding and provide hands-on experience.
 
-### 🗂️ Solution List
+### 🗂️ General Logic Problems
 
 1. Problem Set 1 [Problem1.java](Problem1.java)
 2. Problem Set 2 [Problem2.java](Problem2.java)
@@ -25,7 +25,11 @@ This repository contains practice problems that align with the concepts covered 
 5. Problem Set 5 [Problem5.java](Problem5.java)
 6. Problem Set 6 [Problem6.java](Problem6.java)
 7. Problem Set 7 [Problem7.java](Problem7.java)
+
+### Constructor Problems
 8. Constructors [Constructors.java](Constructors.java)
+
+### Inheritance Problems
 
 ---
 ## 🚀 Usage

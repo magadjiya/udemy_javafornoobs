@@ -1,3 +1,10 @@
+/**
+ * This class demonstrates the use of constructors, encapsulation, and property methods in Java.
+ * It defines a UserProfile class with private fields and provides methods to access and modify these fields.
+ * The main method creates instances of UserProfile and demonstrates the use of these methods.
+ * It also includes error handling to demonstrate validation in setters.
+ */
+
 class UserProfile {
     private String username;
     private String email;
@@ -23,7 +30,9 @@ class UserProfile {
         return age;
     }
     
-    // Setter for username with validation
+    // Setters for the fields aka property methods
+    // These methods allow modification of the private fields
+    // They include validation to ensure the integrity of the data
     public void setUsername(String username) {
         if (username == null || username.isEmpty()) {
             throw new IllegalArgumentException("Username cannot be null or empty");
@@ -31,7 +40,6 @@ class UserProfile {
         this.username = username;
     }
 
-    // Setter for email with validation
     public void setEmail(String email) {
         if (email == null || !email.contains("@")) {
             throw new IllegalArgumentException("Invalid email address");
@@ -40,7 +48,6 @@ class UserProfile {
         }
     }
 
-    // Setter for age with validation
     public void setAge(int age) {
         if (age < 0) {
             throw new IllegalArgumentException("Age cannot be negative");

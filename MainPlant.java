@@ -1,3 +1,5 @@
+// Main function for the Plant class
+
 public class MainPlant {
     public static void main(String[] args) {
         Flower hibiscus = new Flower("Hibiscus", null, "Flower", 1);

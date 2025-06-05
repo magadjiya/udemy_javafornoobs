@@ -6,7 +6,10 @@ This repository contains practice examples from the **Java For Noobs** course. I
 - Utilizing loops: `while` and `for`
 - Grasping Object-Oriented Programming (OOP) principles
 - Creating classes, objects, and methods
+- Data Structure - linked lists
 - Developing problem-solving skills using Java
+
+This repo also includes a final project to showcase full understanding of the topics covered: To Do List using linked list data structure.
 
 📘 [Click here to view the course on Udemy](https://www.udemy.com/course/java-for-noobs-beginners/)
 
@@ -30,6 +33,13 @@ This repository contains practice problems that align with the concepts covered 
 8. Constructors [Constructors.java](Constructors.java)
 
 ### Inheritance Problems
+9. Main (Plant) [MainPlant.java](MainPlant.java)
+10. Plant (Superclass) [Plant.java](Plant.java)
+11. Tree (subclass) [Tree.java](Tree.java)
+12. FLower (subclass) [Flower.java](Flower.java)
+
+#### Mini Project
+To Do List [ToDoApp.java](ToDoApp.java)
 
 ---
 ## 🚀 Usage

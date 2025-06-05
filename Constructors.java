@@ -2,7 +2,6 @@
  * This class demonstrates the use of constructors, encapsulation, and property methods in Java.
  * It defines a UserProfile class with private fields and provides methods to access and modify these fields.
  * The main method creates instances of UserProfile and demonstrates the use of these methods.
- * It also includes error handling to demonstrate validation in setters.
  */
 
 class UserProfile {

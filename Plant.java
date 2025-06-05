@@ -1,5 +1,5 @@
 /**
- * Class to inherit from
+ * Class to inherit from with the Constructor, setters and getters
  */
 
 public class Plant {

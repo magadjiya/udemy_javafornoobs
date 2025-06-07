@@ -47,12 +47,12 @@ To Do List [ToDoApp.java](ToDoApp.java)
 Make sure JDK is installed, then run:
 
 ```bash
-javac Problem1.java
-java Problem1
+javac FileName.java
+java FileName
 ```
 Or:
 ```bash
-java Problem1.java
+java FIleName.java
 ```
 ---
 

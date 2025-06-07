@@ -63,12 +63,50 @@ class ToDoList {
         System.out.println("Task added: " + task);
     }
 
-    // Method to remove a task from the To-Do list
-    // public void removeTask(String task) {
-    //     if (head == null) {
-    //         System.out.println("No tasks to remove.");
-    //         return;
-    //     }
+    // Method to remove a task from the To-Do List
+    public void removeTask(String task) {
+        // Check if the there are no tasks to remove
+        if (head == null) {
+            System.out.println("No tasks to remove.");
+            return;
+        }
+
+        // If the head node is the one to remove
+        if (head.getTask().equals(task)) {
+            head = head.getNextTask();
+            size--;
+            System.out.println("Task removed: " + task);
+            return;
+        }
+
+        // For nodes beyond the head
+        TaskNode current = head;
+        while (current.getNextTask() != null) {
+            if (current.getNextTask().getTask().equals(task)) {
+                current.setNextTask(current.getNextTask().getNextTask());
+                size--;
+                System.out.println("Task removed: " + task);
+                return;
+            }
+            current = current.getNextTask();
+        }
+
+        System.out.println("Task not found: " + task);
+    }
+
+    // Method to display tasks on the To-Do List
+    public void displayTasks() {
+        TaskNode currentNode = head;
+
+        if (currentNode == null) {
+            System.out.println("No tasks added yet");
+        }
+
+        while (currentNode != null) {
+            System.out.println("[ ] " + currentNode.getTask());
+            currentNode = currentNode.getNextTask();
+        }
+    }
 }
 
 public class ToDoApp {
@@ -78,26 +116,49 @@ public class ToDoApp {
                 "Type 'exit' to quit the application.");
         
         Scanner userInput = new Scanner(System.in);
-        String command = userInput.nextLine();
+        ToDoList todoList = new ToDoList();
 
-        // Check if the user wants to exit the application
-        if (command.equalsIgnoreCase("exit")) {
-            System.out.println("Exiting the application. Goodbye!");
-            userInput.close();
-            return;
+        boolean running = true;
+
+        while (running) {
+            String command = userInput.nextLine().toLowerCase();
+            switch (command) {
+                case "add":
+                    System.out.print("Please add your task: ");
+                    String task = userInput.nextLine();
+                    todoList.addTask(task);
+                    break;
+                case "view":
+                    todoList.displayTasks();
+                    break;
+                case "remove":
+                    System.out.print("Please add task to remove: ");
+                    String taskToDelete = userInput.nextLine();
+                    todoList.removeTask(taskToDelete);
+                    break;
+                case "exit":
+                    System.out.println("Exiting the application. Goodbye!");
+                    running = false;
+                    break;
+                default:
+                    System.out.println("Invalid command, try again");
+                    break;
+            }
         }
 
-        if (!command.equalsIgnoreCase("add")) {
-            System.out.println("Invalid command. Please try again.");
-        } else if (command.equalsIgnoreCase("add")) {
-            System.out.println("Please enter the task you want to add:");
-            String task = userInput.nextLine();
-            ToDoList todoList = new ToDoList();
-            todoList.addTask(task);
-            System.out.println("Task added successfully!");
-        } else {
-            System.out.println("Exiting the application. Goodbye!");
-        }
         userInput.close();
+
+
+        // if (!command.equalsIgnoreCase("add")) {
+        //     System.out.println("Invalid command. Please try again.");
+        // } else if (command.equalsIgnoreCase("add")) {
+        //     System.out.println("Please enter the task you want to add:");
+        //     String task = userInput.nextLine();
+        //     ToDoList todoList = new ToDoList();
+        //     todoList.addTask(task);
+        //     System.out.println("Task added successfully!");
+        // } else {
+        //     System.out.println("Exiting the application. Goodbye!");
+        // }
     }
 }

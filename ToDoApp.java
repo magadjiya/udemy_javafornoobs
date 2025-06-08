@@ -74,6 +74,9 @@ class ToDoList {
         // If the head node is the one to remove
         if (head.getTask().equals(task)) {
             head = head.getNextTask();
+            if (head == null) {
+                tail = null;
+            }
             size--;
             System.out.println("Task removed: " + task);
             return;
@@ -83,6 +86,9 @@ class ToDoList {
         TaskNode current = head;
         while (current.getNextTask() != null) {
             if (current.getNextTask().getTask().equals(task)) {
+                if (current.getNextTask() == tail) { // If removing the last node
+                    tail = current;
+                }
                 current.setNextTask(current.getNextTask().getNextTask());
                 size--;
                 System.out.println("Task removed: " + task);
@@ -147,18 +153,5 @@ public class ToDoApp {
         }
 
         userInput.close();
-
-
-        // if (!command.equalsIgnoreCase("add")) {
-        //     System.out.println("Invalid command. Please try again.");
-        // } else if (command.equalsIgnoreCase("add")) {
-        //     System.out.println("Please enter the task you want to add:");
-        //     String task = userInput.nextLine();
-        //     ToDoList todoList = new ToDoList();
-        //     todoList.addTask(task);
-        //     System.out.println("Task added successfully!");
-        // } else {
-        //     System.out.println("Exiting the application. Goodbye!");
-        // }
     }
 }
